@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>crullian</title>
+    <link rel="stylesheet" type="text/css" href="views/style.css"/>
+    <script src="angular/angular.js"></script>
+    <script src="angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="views/main.js"></script>
+  </head>
+  <body ng-app="Crullian">
+    <div ng-controller="MainCtrl">
+      <h1 id="crullian"><a ui-sref="home">{{ message }}</a></h1>
+      <div class="nav">
+        <p><a ui-sref="music">music</a></p>
+        <p><a ui-sref="art">art</a></p>
+        <p><a ui-sref="web">web</a></p>
+      </div>
+      <div ui-view />
+    </div>
+  </body>
+</html>

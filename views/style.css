@@ -1,0 +1,56 @@
+body {
+  font-family: "Didot";
+  padding: 0 20px 0;
+  background: #f4f4f7;
+  color: #444;
+}
+
+#crullian {
+  width: 300px;
+  margin: 0 auto;
+  font-size: 45px;
+}
+
+#pixel {
+  width: 600px;
+}
+
+h3 {
+  text-align: center;
+  margin: 20px;
+  font-weight: 300;
+}
+
+a {
+  display: block;
+  /*padding: 0 20px;*/
+  text-decoration: none; 
+  color: #444;
+}
+
+.nav {
+  display: inline-block;
+  position: fixed;
+  top: 40px;
+}
+
+.theMan {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.music {
+  text-align: left;
+  width: 320px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.error {
+  color: red;
+  background-color: rgba(43,43,43, .8);
+  border-radius: 5px;
+  padding: 10px;
+  width: 500px;
+  margin: 50px auto;
+}
