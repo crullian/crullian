@@ -11,6 +11,10 @@ body {
   font-size: 45px;
 }
 
+#connect {
+  width: 300px;
+}
+
 #pixel {
   width: 600px;
 }
@@ -60,7 +64,7 @@ a {
 }
 
 .error {
-  color: red;
+  color: rgb(255, 0, 142);
   background-color: rgba(43,43,43, .8);
   border-radius: 5px;
   padding: 10px;
