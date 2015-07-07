@@ -4,7 +4,7 @@
   "description": "My personal website",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon -e html,js app"
+    "start": "nodemon --watch server -e html,js app"
   },
   "author": "",
   "license": "ISC",

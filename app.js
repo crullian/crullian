@@ -33,7 +33,7 @@ app.use(function(err, req, res, next) {
 	});
 });
 
-var port = 8081;
+var port = process.env.PORT || 8081;
 app.listen(port, function() {
 	console.log('Fun happens on port:', port)
 });
