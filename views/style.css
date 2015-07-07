@@ -59,8 +59,13 @@ a {
 }
 
 .theArt {
-  width: 850px;
+  width: 807px;
   margin: 0 auto;
+}
+
+.web {
+  width: 500px;
+  margin: 0 auto;  
 }
 
 .error {
