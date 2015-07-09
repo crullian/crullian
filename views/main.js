@@ -38,3 +38,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: 'views/error.html'
     });
 });
+
+app.config(["$locationProvider", function($locationProvider) {
+  $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false
+  });
+}]);
