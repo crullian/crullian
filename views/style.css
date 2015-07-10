@@ -46,7 +46,7 @@ a {
 
 .nav {
   display: inline-block;
-  /*position: fixed;*/
+  position: fixed;
   top: 40px;
 }
 
@@ -81,7 +81,7 @@ a {
   margin: 50px auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 320px) {
   body{
     padding: none;
   }
@@ -91,9 +91,11 @@ a {
   }
 
   .nav {
+    position: relative;
     display: block;
     width: 265px;
     margin: 0 auto;
+    top: 0px;
   }
 
   .nav p {
@@ -101,12 +103,6 @@ a {
     margin: 10px 26px;
   }
 
-  .title {
-    /*position: fixed;*/
-  }
-
-  .content {
-  }
   .theMan {
     width: 250px;
   }
