@@ -100,7 +100,7 @@ a {
 
   .nav p {
     display: inline-block;
-    margin: 10px 26px;
+    margin: 10px 5%;
   }
 
   .theMan {
@@ -142,5 +142,9 @@ a {
   #edj {
     width: 250px;
     height: 100%;   
+  }
+
+  .desktop-only {
+    display: none;
   }
 }

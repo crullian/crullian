@@ -33,6 +33,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
       url: '/web',
       templateUrl: 'views/web.html'
     })
+    .state('about', {
+      url: '/about',
+      templateUrl: 'views/about.html'
+    })
     .state('error', {
       url: '/error',
       templateUrl: 'views/error.html'
