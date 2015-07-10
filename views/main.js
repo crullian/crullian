@@ -32,7 +32,7 @@ app.controller('MusicCtrl', function($scope) {
 app.controller('ArtCtrl', function($scope) {
   $scope.collection = [{
     title: "actaeon",
-    img: "views/assets/Cuckoldlg.jpg"
+    img: "views/assets/Cuckold.jpg"
   }, {
     title: "sheepgirl",
     img: "views/assets/Sheepgirllg.jpg"
@@ -41,7 +41,13 @@ app.controller('ArtCtrl', function($scope) {
     img: "views/assets/Bull Woman.jpg"
   }, {
     title: "cornerpiece",
-    img: "views/assets/Cornerpiece2.jpg"
+    img: "views/assets/Cornerpiece.jpg"
+  }, {
+    title: "little man",
+    img: "views/assets/Little Man.jpg"
+  }, {
+    title: "hic maneamus",
+    img: "views/assets/Hic Maneamus.jpg"
   }];
 });
 
