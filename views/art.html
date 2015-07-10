@@ -1,6 +1,12 @@
 <h3 class="title">art.</h3>
-
-<div class="theArt">
-  <img src="views/assets/Cuckoldlg.jpg" id="cuck"/>
-  <img src="views/assets/Sheepgirllg.jpg" id="sheep"/>
+<div ng-controller="ArtCtrl">
+  <div ng-repeat="work in collection">
+    <div class="theArt">
+      <div>
+        <img ng-src="{{work.img}}" id="work"/>
+        <p>{{ work.title }}</p>
+      </div>
+    </div>
+  </div>
 </div>
+
