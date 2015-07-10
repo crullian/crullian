@@ -109,4 +109,28 @@ a {
   #pixel {
     width: 250px;
   }
+
+  .music {
+    width: 250px;
+    padding: 0px;
+  }
+
+  #connect {
+    width: 250px;
+  }
+
+  audio {
+    width: 250px;
+  }
+
+  .theArt {
+    width: 250px;
+  }
+  #cuck {
+    width: 250px;
+    height: 100%;
+  }
+  #sheep {
+    width: 250px;
+  }
 }
