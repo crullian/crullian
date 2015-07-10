@@ -31,6 +31,10 @@ body {
   width: 500px;
 }
 
+#edj {
+  width: 500px;
+}
+
 .title {
   text-align: center;
   margin: 20px;
@@ -86,10 +90,6 @@ a {
     padding: none;
   }
 
-  #crullian {
-    /*position: fixed;*/
-  }
-
   .nav {
     position: relative;
     display: block;
@@ -120,7 +120,8 @@ a {
   }
 
   audio {
-    width: 250px;
+    /*position: relative;*/
+    width: 100%;
   }
 
   .theArt {
