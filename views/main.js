@@ -11,7 +11,38 @@ app.controller('MainCtrl', function($scope) {
   ].forEach(function(ln) {
     console.log(ln)
   });
+});
 
+app.controller('MusicCtrl', function($scope) {
+  $scope.songs = [{
+    title: "flaunting the sorcery (q.r.)",
+    img: "views/assets/QR blocks.jpg",
+    src: "views/assets/Flaunting The Sorcery (Q.R).mp3"
+  }, {
+    title: "welcome to the night",
+    img: "views/assets/WTTN cover final mg.jpg",
+    src: "views/assets/Welcome To The Night 23.mp3"
+  }, {
+    title: "temporary love",
+    img: "views/assets/getting_away.jpg",
+    src: "views/assets/Temporary Love34MP3.mp3"
+  }];
+});
+
+app.controller('ArtCtrl', function($scope) {
+  $scope.collection = [{
+    title: "actaeon",
+    img: "views/assets/Cuckoldlg.jpg"
+  }, {
+    title: "sheepgirl",
+    img: "views/assets/Sheepgirllg.jpg"
+  }, {
+    title: "bullwoman",
+    img: "views/assets/Bull Woman.jpg"
+  }, {
+    title: "cornerpiece",
+    img: "views/assets/Cornerpiece2.jpg"
+  }];
 });
 
 app.config(function($stateProvider, $urlRouterProvider) {
@@ -32,6 +63,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
     .state('web', {
       url: '/web',
       templateUrl: 'views/web.html'
+    })
+    .state('about', {
+      url: '/about',
+      templateUrl: 'views/about.html'
     })
     .state('error', {
       url: '/error',

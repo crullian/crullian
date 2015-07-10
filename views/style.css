@@ -20,15 +20,11 @@ body {
 }
 
 #pixel {
-  width: 600px;
-}
-
-#cuck {
-  height: 400px;
-}
-
-#sheep {
   width: 500px;
+}
+
+#work {
+  width: 600px;
 }
 
 #edj {
@@ -55,7 +51,7 @@ a {
 }
 
 .theMan {
-  width: 600px;
+  width: 500px;
   margin: 0 auto;
 }
 
@@ -67,7 +63,7 @@ a {
 }
 
 .theArt {
-  width: 807px;
+  width: 600px;
   margin: 0 auto;
 }
 
@@ -100,7 +96,7 @@ a {
 
   .nav p {
     display: inline-block;
-    margin: 10px 26px;
+    margin: 10px 5%;
   }
 
   .theMan {
@@ -112,7 +108,7 @@ a {
 
   .music {
     width: 250px;
-    padding: 0px;
+    padding: 20px 0px;
   }
 
   #connect {
@@ -126,15 +122,19 @@ a {
 
   .theArt {
     width: 250px;
+    padding-bottom: 20px;
   }
-  #cuck {
+
+  #work {
     width: 250px;
     height: 100%;
   }
-  #sheep {
-    width: 250px;
-  }
 
+  .theArt p {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
   .web {
     width: 250px;
     height: 100%;
@@ -142,5 +142,13 @@ a {
   #edj {
     width: 250px;
     height: 100%;   
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .error {
+    width: 250px;
   }
 }
