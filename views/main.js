@@ -44,7 +44,7 @@ app.controller('ArtCtrl', function($scope) {
     img: "views/assets/Cornerpiece.jpg"
   }, {
     title: "little man",
-    img: "views/assets/Little Man.jpg"
+    img: "views/assets/Little_Man.jpg"
   }, {
     title: "hic maneamus",
     img: "views/assets/Hic Maneamus.jpg"
