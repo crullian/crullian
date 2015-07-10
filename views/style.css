@@ -133,4 +133,13 @@ a {
   #sheep {
     width: 250px;
   }
+
+  .web {
+    width: 250px;
+    height: 100%;
+  }
+  #edj {
+    width: 250px;
+    height: 100%;   
+  }
 }
