@@ -14,6 +14,22 @@ app.controller('MainCtrl', function($scope) {
 
 });
 
+app.controller('MusicCtrl', function($scope) {
+  $scope.songs = [{
+    title: "missed connections",
+    img: "https://f1.bcbits.com/img/a0660586849_10.jpg",
+    src: "views/assets/Missed Connections.mp3"
+  }, {
+    title: "flaunting the sorcery (q.r.)",
+    img: "views/assets/QR blocks.jpg",
+    src: "views/assets/Flaunting The Sorcery (Q.R).mp3"
+  }, {
+    title: "welcome to the night",
+    img: "views/assets/WTTN cover final mg.jpg",
+    src: "views/assets/Welcome To The Night 23.mp3"
+  }]
+});
+
 app.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
   $stateProvider

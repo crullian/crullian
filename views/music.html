@@ -1,9 +1,11 @@
 <h3 class="title">housekeeping (music).</h3>
-
-<div class="music">
-  <img id="connect" src="https://f1.bcbits.com/img/a0660586849_10.jpg">
-  <h3>missed connections</h3>
-  <audio src="views/assets/Missed Connections.mp3" controls></audio>
+<div ng-controller="MusicCtrl">
+  <div ng-repeat="song in songs">
+    <div class="music">
+      <img id="connect" ng-src="{{song.img}}">
+      <h3>{{song.title}}</h3>
+      <audio ng-src="{{song.src}}" controls></audio>
+    </div>
+  </div>
 </div>
-
 <p><a href="http://housekeeping.bandcamp.com" target="_blank">more</a></p>
