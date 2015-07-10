@@ -31,11 +31,17 @@ app.controller('MusicCtrl', function($scope) {
 
 app.controller('ArtCtrl', function($scope) {
   $scope.collection = [{
+    title: "actaeon",
+    img: "views/assets/Cuckoldlg.jpg"
+  }, {
     title: "sheepgirl",
     img: "views/assets/Sheepgirllg.jpg"
   }, {
     title: "bullwoman",
     img: "views/assets/Bull Woman.jpg"
+  }, {
+    title: "cornerpiece",
+    img: "views/assets/Cornerpiece2.jpg"
   }];
 });
 
