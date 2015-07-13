@@ -85,6 +85,78 @@ a {
   margin: 50px auto;
 }
 
+@media (max-width: 620px) {
+    body{
+    padding: none;
+  }
+
+/*  .nav {
+    position: relative;
+    display: block;
+    width: 465px;
+    margin: 0 auto;
+    top: 0px;
+  }*/
+
+/*  .nav p {
+    display: inline-block;
+    margin: 10px 8%;
+  }*/
+
+  .theMan {
+    width: 350px;
+  }
+  #pixel {
+    width: 350px;
+  }
+
+  .music {
+    width: 350px;
+    padding: 20px 0px;
+  }
+
+  #connect {
+    width: 350px;
+  }
+
+  audio {
+    /*position: relative;*/
+    width: 100%;
+  }
+
+  .theArt {
+    width: 350px;
+    padding-bottom: 20px;
+  }
+
+  #work {
+    width: 350px;
+    height: 100%;
+  }
+
+  .theArt p {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  .web {
+    width: 350px;
+    height: 100%;
+  }
+  #edj {
+    width: 350px;
+    height: 100%;   
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .error {
+    width: 350px;
+  }
+}
+
 @media (max-width: 320px) {
   body{
     padding: none;
