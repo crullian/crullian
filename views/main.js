@@ -51,6 +51,34 @@ app.controller('ArtCtrl', function($scope) {
   }];
 });
 
+app.controller('WebCtrl', function($scope) {
+  $scope.projects = [{
+    title: "emergency dj",
+    img: "views/assets/edj.jpg",
+    src: "http://emergencydj.herokuapp.com"
+  }, {
+    title: "vinylcache",
+    img: "views/assets/vc.jpg",
+    src: "http://vinylcache.herokuapp.com"
+  }, {
+    title: "codestream",
+    img: "https://raw.githubusercontent.com/heatherpike/codestream/master/codestream.jpg",
+    src: ""
+  }, {
+    title: "art awesome",
+    img: "views/assets/aa.jpg",
+    src: "views/assets/Temporary Love34MP3.mp3"
+  }, {
+    title: "chord reader",
+    img: "views/assets/cr.jpg",
+    src: ""
+  }, {
+    title: "tweeter",
+    img: "views/assets/tw.jpg",
+    src: "http://dry-temple-5824.herokuapp.com"
+  }];
+});
+
 app.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/');
   $stateProvider
