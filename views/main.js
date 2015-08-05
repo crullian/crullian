@@ -67,7 +67,7 @@ app.controller('WebCtrl', function($scope) {
   }, {
     title: "art awesome",
     img: "views/assets/aa.jpg",
-    src: "views/assets/Temporary Love34MP3.mp3"
+    src: ""
   }, {
     title: "chord reader",
     img: "views/assets/cr.jpg",
