@@ -41,9 +41,13 @@ body {
   font-weight: 300;
 }
 
+li {
+  list-style-type: none;
+  margin: 1em 0;
+}
+
 a {
   display: block;
-  /*padding: 0 20px;*/
   text-decoration: none; 
   color: #444;
 }
@@ -52,6 +56,7 @@ a {
   display: inline-block;
   position: fixed;
   top: 40px;
+  padding: 0;
 }
 
 .theMan {
@@ -69,6 +74,7 @@ a {
 .theArt {
   width: 600px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .web {
@@ -90,19 +96,6 @@ a {
     padding: none;
   }
 
-/*  .nav {
-    position: relative;
-    display: block;
-    width: 465px;
-    margin: 0 auto;
-    top: 0px;
-  }*/
-
-/*  .nav p {
-    display: inline-block;
-    margin: 10px 8%;
-  }*/
-
   .theMan {
     width: 350px;
   }
@@ -120,7 +113,6 @@ a {
   }
 
   audio {
-    /*position: relative;*/
     width: 100%;
   }
 
@@ -170,7 +162,7 @@ a {
     top: 0px;
   }
 
-  .nav p {
+  .nav li {
     display: inline-block;
     margin: 10px 5%;
   }
@@ -192,7 +184,6 @@ a {
   }
 
   audio {
-    /*position: relative;*/
     width: 100%;
   }
 
@@ -203,7 +194,7 @@ a {
 
   #work {
     width: 250px;
-    height: 100%;
+    height: auto;
   }
 
   .theArt p {
@@ -217,7 +208,7 @@ a {
   }
   #edj {
     width: 250px;
-    height: 100%;   
+    height: auto;   
   }
 
   .desktop-only {
