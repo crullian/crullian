@@ -11,7 +11,7 @@ export default React.createClass({
           <h3 className="title">the man.</h3>
 
           <div className="theMan">
-            <img src="assets/pixel2.jpg" id="pixel"/>
+            <img src="assets/pixel2.jpg" className="image"/>
           </div>
         </div>
       )

@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Didot";
+  padding: 0 20px 0;
+  background: #f4f4f7;
+  color: #444;
+}
+
+.nav {
+  display: block;
+  margin: 0;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 10px 12px;
+}
+
+#crullian {
+  margin: 0 auto;
+  font-size: 2.8125rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  display: block;
+  text-decoration: none; 
+  color: #444;
+}
+
+.image {
+  width: 100%;
+}
+
+.title {
+  margin: 20px;
+  font-weight: 300;
+}
+
+.music {
+  padding: 10px 13px 40px;
+}
+
+audio {
+  width: 100%;
+}
+
+#crullian,
+.title,
+.music p,
+.theArt p,
+.web p {
+  text-align: center;
+}
+
+.theMan {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.theArt, .web {
+  padding-bottom: 30px;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 420px) {
+  .nav {
+    display: inline-block;
+    position: fixed;
+    top: 40px;
+    padding: 0;
+  }
+
+  .nav li {
+    display: block;
+    margin: 1em 0;
+  }
+
+  .flex-container {
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    column-count: 2;
+    column-gap: 10px;
+    padding-left: 15%;
+  }
+
+  .theArt,
+  .web {
+    width: 80%;
+    display: inline-block;
+  }
+
+  .music {
+    width: 80%;
+    display: inline-block;
+  }
+
+  .theMan{
+    width: 65%;
+  }
+}
+
+@media (min-width: 768px) {
+  .theMan{
+    width: 55%;
+  }
+}
+
+@media (min-width: 1074px) {
+  .flex-container {
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    column-count: 3;
+    column-gap: 10px;
+    padding-left: 90px;
+  }
+
+  .theArt,
+  .web {
+    width: 300px;
+    display: inline-block;
+  }
+
+  .music {
+    width: 300px;
+    display: block;
+  }
+
+  .theMan {
+    width: 45%;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+}
+

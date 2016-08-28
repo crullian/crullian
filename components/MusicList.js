@@ -27,7 +27,9 @@ export default React.createClass({
     return (
       <div>
         <h3 className="title">housekeeping (music).</h3>
-        {songs}
+        <div className="flex-container">
+          {songs}
+        </div>
         <p><a href="http://housekeeping.bandcamp.com" target="_blank">more</a></p>
       </div>
     )

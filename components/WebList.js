@@ -39,7 +39,9 @@ export default React.createClass({
     return (
       <div>
         <h3 className="title">web.</h3>
-        {images}
+        <div className="flex-container">
+          {images}
+        </div>
       </div>
     )
   }
