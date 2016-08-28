@@ -48,7 +48,6 @@ li {
 
 a {
   display: block;
-  /*padding: 0 20px;*/
   text-decoration: none; 
   color: #444;
 }
@@ -97,19 +96,6 @@ a {
     padding: none;
   }
 
-/*  .nav {
-    position: relative;
-    display: block;
-    width: 465px;
-    margin: 0 auto;
-    top: 0px;
-  }*/
-
-/*  .nav p {
-    display: inline-block;
-    margin: 10px 8%;
-  }*/
-
   .theMan {
     width: 350px;
   }
@@ -127,7 +113,6 @@ a {
   }
 
   audio {
-    /*position: relative;*/
     width: 100%;
   }
 
@@ -199,7 +184,6 @@ a {
   }
 
   audio {
-    /*position: relative;*/
     width: 100%;
   }
 
