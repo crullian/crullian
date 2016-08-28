@@ -2,7 +2,7 @@ import React from 'react'
 
 export default React.createClass({
   render() {
-    console.debug(this.props);
+    
     return ( 
       <div className="theArt">
         <div>

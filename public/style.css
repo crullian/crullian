@@ -75,6 +75,7 @@ a {
 .theArt {
   width: 600px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .web {
@@ -176,7 +177,7 @@ a {
     top: 0px;
   }
 
-  .nav p {
+  .nav li {
     display: inline-block;
     margin: 10px 5%;
   }
@@ -209,7 +210,7 @@ a {
 
   #work {
     width: 250px;
-    height: 100%;
+    height: auto;
   }
 
   .theArt p {
@@ -223,7 +224,7 @@ a {
   }
   #edj {
     width: 250px;
-    height: 100%;   
+    height: auto;   
   }
 
   .desktop-only {

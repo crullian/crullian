@@ -4,7 +4,6 @@ import { Link } from 'react-router'
 export default React.createClass({
 
   render() {
-    console.debug(this.props.location.pathname);
     let content = this.props.children;
     if(this.props.location.pathname == '/') {
       content = (

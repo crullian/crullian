@@ -2,6 +2,7 @@ import React from 'react'
 
 export default React.createClass({
   render() {
+    
     return (
       <div className="music">
         <img id="connect" src={ this.props.img }/>
