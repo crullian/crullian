@@ -1,1 +1,1 @@
-# My personal website/gallery of curiousities
+# My portfolio site
