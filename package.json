@@ -1,6 +1,9 @@
 {
   "name": "crullian",
   "version": "1.0.0",
+  "engines": {
+    "node": "5.9.0"
+  },
   "description": "My portfolio website",
   "main": "index.js",
   "scripts": {
