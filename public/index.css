@@ -72,6 +72,15 @@ audio {
   display: none;
 }
 
+.SimplePDF {
+  width: 350px;
+  height: 500px;
+  border: 1px dashed red;
+  margin: 15px;
+  padding: 15px;
+  float: left;
+}
+
 @media (min-width: 420px) {
   .nav {
     display: inline-block;

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router'
+import Pdf from 'react-pdf-js'
 
 export default React.createClass({
 
@@ -12,6 +13,9 @@ export default React.createClass({
 
           <div className="theMan">
             <img src="assets/pixel2.jpg" className="image"/>
+          </div>
+          <div>
+            <Pdf className="SimplePDF" file="assets/Chris_gullian.pdf" />
           </div>
         </div>
       )
