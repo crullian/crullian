@@ -6,6 +6,7 @@ import About from './components/About'
 import ArtList from './components/ArtList'
 import MusicList from './components/MusicList'
 import WebList from './components/WebList'
+import CV from './components/CV'
 
 render((
   <Router history={browserHistory}>
@@ -14,6 +15,7 @@ render((
       <Route path="/art"   component={ArtList}/>
       <Route path="/music" component={MusicList}/>
       <Route path="/web"   component={WebList}/>
+      <Route path="/cv"    component={CV}/>
     </Route>
   </Router>
 ), document.getElementById('app'))
