@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router'
-import Pdf from 'react-pdf-js'
+
 
 export default React.createClass({
 
