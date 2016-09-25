@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: "Didot";
+  font-family: "century Gothic";
   padding: 0 20px 0;
   background: #f4f4f7;
   color: #444;
@@ -59,7 +59,7 @@ audio {
   text-align: center;
 }
 
-.theMan {
+.man {
   width: 95%;
   margin: 0 auto;
 }
@@ -106,13 +106,13 @@ audio {
     display: inline-block;
   }
 
-  .theMan{
+  .man{
     width: 65%;
   }
 }
 
 @media (min-width: 768px) {
-  .theMan{
+  .man{
     width: 55%;
   }
 }
@@ -139,7 +139,7 @@ audio {
     display: block;
   }
 
-  .theMan {
+  .man {
     width: 45%;
   }
 
