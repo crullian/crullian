@@ -10,7 +10,7 @@ export default class About extends React.Component {
       <div>
         <h3 className="title">about me.</h3>
 
-        <div className="theMan">
+        <div className="man">
           <span>
             <p>Hi I’m Chris. I like making things in the digital world and in the real world. Get in touch with me: 
               <a href="mailto:crullian@gmail.com">crullian@gmail.com</a>
@@ -20,7 +20,6 @@ export default class About extends React.Component {
           <span>
             <img src="assets/wings.jpg" className="image"/>
           </span>
-          <Link to="/cv">view my resume</Link>
         </div>
       </div>
     )

@@ -5,25 +5,47 @@ export default class Home extends React.Component {
 
   render() {
     let content = this.props.children;
+
     if(this.props.location.pathname == '/') {
       content = (
           <div className="man">
-            <div>Hi! Thanks for visiting. I'm a Graduate, Fullstack Academy of Code Software Engineering Immersive Program. Experience building client and server side Web applications using the following technologies</div>
-            <div><img src="assets/z.jpg" className="image"/></div>
+            <div>
+              <h2>TL;DR</h2>
+              <p>Hi! Thanks for visiting. I'm a Graduate, 
+                 Fullstack Academy of Code Software Engineering 
+                 Immersive Program. Experience building client 
+                 and server side Web applications using the 
+                 following technologies</p>
+            </div>
+            <div>
+              <img src="assets/z.jpg" className="image"/>
+            </div>
           </div>
       )
     }
 
+    let resumeLink = <li><Link to="/cv">resume</Link></li>
+    let homeLink = null;
+    let nameplate = <h1 id="crullian"><Link to="/">Chris Gullian</Link></h1>;
+
+    if (this.props.location.pathname == '/cv') {
+      nameplate = null;
+      resumeLink = null;
+      homeLink = <li><Link to="/">home</Link></li>
+    }
+
     return( 
       <div>
-        <h1 id="crullian"><Link to="/">Chris Gullian</Link></h1>
+        { nameplate }
         <ul className="nav">
-          <li><Link to="/music">music</Link></li>
-          <li><Link to="/art">art</Link></li>
-          <li><Link to="/web">web</Link></li>
-          <li><Link to="/about">about</Link></li> 
+          <li><Link to="/about">about</Link></li>
+          <li><Link to="/web">portfolio</Link></li>
+          { resumeLink }
+          <li><Link to="/art">other stuff</Link></li>
+          { homeLink }
         </ul>
         {content}
+        <div id="footer"></div>
       </div>
     )
   }
