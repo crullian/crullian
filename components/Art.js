@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default React.createClass({
+export default class Art extends React.Component {
   render() {
 
     return ( 
@@ -12,4 +12,4 @@ export default React.createClass({
       </div>
     )
   }
-})
+}

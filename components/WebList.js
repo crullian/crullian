@@ -1,7 +1,7 @@
 import React from 'react'
 import Web from './Web'
 
-export default React.createClass({
+export default class WebList extends React.Component {
   render() {
     let images = [{
       title: "emergency dj",
@@ -45,4 +45,4 @@ export default React.createClass({
       </div>
     )
   }
-})
+}
