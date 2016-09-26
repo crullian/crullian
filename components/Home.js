@@ -18,7 +18,7 @@ export default class Home extends React.Component {
                  technologies. </p>
             </div>
             <div className="section">
-              <img src="/assets/z.jpg" className="image"/>
+              <img src="/assets/Z.jpg" className="image"/>
             </div>
           </div>
         </div>
