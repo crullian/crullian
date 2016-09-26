@@ -12,11 +12,10 @@ export default class Home extends React.Component {
           <div className="man">
             <div className="section copy">
               <h3>tl;dr</h3>
-              <p>Hi! Thanks for visiting. I'm a Graduate, 
-                 Fullstack Academy of Code Software Engineering 
-                 Immersive Program. Experience building client 
-                 and server side Web applications using the 
-                 following technologies</p>
+              <p>Hi! I'm a Software Developer with 
+                 two years of agency and startup experience building client 
+                 and server side web applications using modern
+                 technologies. </p>
             </div>
             <div className="section">
               <img src="assets/z.jpg" className="image"/>

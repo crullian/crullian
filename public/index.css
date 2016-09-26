@@ -78,7 +78,7 @@ audio {
 }
 
 .theArt, .web {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .desktop-only {
@@ -172,17 +172,25 @@ canvas {
     -webkit-column-gap: 10px;
     column-count: 2;
     column-gap: 10px;
-    padding-left: 12%;
+    padding-left: 18%;
   }
 
-  .theArt,
+  .theArt {
+    width: 75%;
+    display: inline-block;
+  }
+  
   .web {
     width: 90%;
     display: inline-block;
   }
 
+  .web .image {
+    width: 85%;
+  }
+
   .music {
-    width: 90%;
+    width: 80%;
     display: inline-block;
   }
 
