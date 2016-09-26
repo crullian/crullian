@@ -6,7 +6,7 @@ export default class Personal extends Component {
 
   render() {
 
-    let images = [{
+    let personalWork = [{
       title: "emergency dj",
       img: "/assets/edj.jpg",
       src: "http://emergencydj.herokuapp.com"
@@ -43,7 +43,7 @@ export default class Personal extends Component {
       <div>
         <h3 className="title">personal work.</h3>
         <div className="flex-container">
-          {images}
+          { personalWork }
         </div>
       </div>
     )

@@ -160,7 +160,7 @@ canvas {
   }
 
   .man{
-    width: 55%;
+    width: 75%;
   }
 }
 
@@ -187,8 +187,12 @@ canvas {
   }
 
   .man {
-    width: 80%;
+    width: 85%;
     margin-right: 50px;
+  }
+
+  .man .image {
+    width: 95%;
   }
 
   .desktop-only {

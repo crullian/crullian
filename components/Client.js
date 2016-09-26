@@ -5,7 +5,7 @@ export default class Client extends Component {
 
   render() {
 
-    let images = [{
+    let clientWork = [{
       title: "emergency dj",
       img: "/assets/edj.jpg",
       src: "http://emergencydj.herokuapp.com"
@@ -42,7 +42,7 @@ export default class Client extends Component {
       <div>
         <h3 className="title">client work.</h3>
         <div className="flex-container">
-          {images}
+          { clientWork }
         </div>
       </div>
     )
