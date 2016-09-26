@@ -11,15 +11,15 @@ export default class About extends React.Component {
         <h3 className="title">about me.</h3>
 
         <div className="man">
-          <span>
+          <div className="section copy">
             <p>Hi I’m Chris. I like making things in the digital world and in the real world. Get in touch with me: 
               <a href="mailto:crullian@gmail.com">crullian@gmail.com</a>
               <span className="desktop-only">Or check the console if you’re into that sort of thing</span>
             </p>
-          </span>
-          <span>
+          </div>
+          <div className="section">
             <img src="assets/wings.jpg" className="image"/>
-          </span>
+          </div>
         </div>
       </div>
     )

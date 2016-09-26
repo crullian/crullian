@@ -9,15 +9,15 @@ export default class Home extends React.Component {
     if(this.props.location.pathname == '/') {
       content = (
           <div className="man">
-            <div>
-              <h2>TL;DR</h2>
+            <div className="section copy">
+              <h3>tl;dr</h3>
               <p>Hi! Thanks for visiting. I'm a Graduate, 
                  Fullstack Academy of Code Software Engineering 
                  Immersive Program. Experience building client 
                  and server side Web applications using the 
                  following technologies</p>
             </div>
-            <div>
+            <div className="section">
               <img src="assets/z.jpg" className="image"/>
             </div>
           </div>
@@ -39,9 +39,9 @@ export default class Home extends React.Component {
         { nameplate }
         <ul className="nav">
           <li><Link to="/about">about</Link></li>
-          <li><Link to="/web">portfolio</Link></li>
+          <li><Link to="/portfolio">portfolio</Link></li>
           { resumeLink }
-          <li><Link to="/art">other stuff</Link></li>
+          <li><Link to="/other">other stuff</Link></li>
           { homeLink }
         </ul>
         {content}

@@ -12,16 +12,17 @@ body {
 .nav {
   display: block;
   margin: 0;
+  padding: 0;
 }
 
 .nav li {
   display: inline-block;
-  margin: 10px 12px;
+  margin: 10px 9px;
 }
 
 #crullian {
   margin: 0 auto;
-  font-size: 2.8125rem;
+  font-size: 2.1875rem;
   margin-bottom: 20px;
 }
 
@@ -76,14 +77,15 @@ audio {
 
 canvas {
   width: 100%;
-  // height: 500px;
-  // border: 1px dashed red;
-  // margin: 15px;
-  // padding: 15px;
-  // float: left;
 }
 
 @media (min-width: 420px) {
+
+  #crullian,
+  .title {
+    padding-left: 95px;
+  }
+
   .nav {
     display: inline-block;
     position: fixed;
@@ -96,6 +98,15 @@ canvas {
     margin: 1em 0;
   }
 
+  .man .section {
+    display: inline-block;
+    width: 50%
+  }
+
+  .man .section.copy {
+    float: left;
+  }
+
   .flex-container {
     -moz-column-count: 2;
     -moz-column-gap: 10px;
@@ -103,7 +114,7 @@ canvas {
     -webkit-column-gap: 10px;
     column-count: 2;
     column-gap: 10px;
-    padding-left: 15%;
+    padding-left: 18%;
   }
 
   .theArt,
@@ -136,7 +147,7 @@ canvas {
     -webkit-column-gap: 10px;
     column-count: 3;
     column-gap: 10px;
-    padding-left: 90px;
+    padding-left: 12%;
   }
 
   .theArt,
@@ -152,6 +163,7 @@ canvas {
 
   .man {
     width: 80%;
+    margin-right: 50px;
   }
 
   .desktop-only {

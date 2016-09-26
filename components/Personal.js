@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router'
 import Web from './Web'
 
-export default class WebList extends React.Component {
+export default class Personal extends Component {
+
   render() {
+
     let images = [{
       title: "emergency dj",
       img: "assets/edj.jpg",
@@ -39,15 +41,13 @@ export default class WebList extends React.Component {
 
     return (
       <div>
-        <div className="man">
-          <h3 className="title">portfolio.</h3>
-          <li><Link to="/client">client work.</Link></li>
-          <li><Link to="/personal">personal work</Link></li>
-          {/*<div className="flex-container">
+        
+          <h3 className="title">personal work.</h3>
+          <div className="flex-container">
             {images}
-          </div>*/}
-        </div>
+          </div>
+        
       </div>
     )
   }
-}
+} 
