@@ -11,6 +11,7 @@ body {
 
 .nav {
   display: block;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
@@ -39,6 +40,7 @@ a {
 
 .image {
   width: 100%;
+  box-shadow: 10px 10px 20px #c1bfbf;
 }
 
 .title {
@@ -66,6 +68,14 @@ audio {
   width: 95%;
   margin: 0 auto;
 }
+ 
+.man .image {
+  margin-top: 20px;
+}
+
+.man .section.copy p {
+  margin-bottom: 0;
+}
 
 .theArt, .web {
   padding-bottom: 30px;
@@ -79,7 +89,7 @@ canvas {
   width: 100%;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 768px) {
 
   #crullian,
   .title {
@@ -105,6 +115,7 @@ canvas {
 
   .man .section.copy {
     float: left;
+    padding: 20px;
   }
 
   .flex-container {
@@ -134,6 +145,20 @@ canvas {
 }
 
 @media (min-width: 768px) {
+  .nav {
+    text-align: left;
+  }
+
+  .flex-container {
+    -moz-column-count: 1;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 10px;
+    column-count: 1;
+    column-gap: 10px;
+    padding-left: 23%;
+  }
+
   .man{
     width: 55%;
   }
@@ -145,20 +170,20 @@ canvas {
     -moz-column-gap: 10px;
     -webkit-column-count: 3;
     -webkit-column-gap: 10px;
-    column-count: 3;
+    column-count: 2;
     column-gap: 10px;
     padding-left: 12%;
   }
 
   .theArt,
   .web {
-    width: 300px;
+    width: 90%;
     display: inline-block;
   }
 
   .music {
-    width: 300px;
-    display: block;
+    width: 90%;
+    display: inline-block;
   }
 
   .man {

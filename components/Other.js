@@ -7,10 +7,10 @@ export default class Other extends Component {
 
     return (
       <div>
+        <h3 className="title">Other Stuff</h3>
         <div className="man">
-          <h3 className="title">Other Stuff</h3>
-          <li><Link to="/art">art</Link></li>
-          <li><Link to="/music">music</Link></li>
+          <li><Link to="/other/art">art</Link></li>
+          <li><Link to="/other/music">music</Link></li>
         </div>
       </div>
     )

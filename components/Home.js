@@ -8,6 +8,7 @@ export default class Home extends React.Component {
 
     if(this.props.location.pathname == '/') {
       content = (
+        <div>
           <div className="man">
             <div className="section copy">
               <h3>tl;dr</h3>
@@ -21,6 +22,7 @@ export default class Home extends React.Component {
               <img src="assets/z.jpg" className="image"/>
             </div>
           </div>
+        </div>
       )
     }
 

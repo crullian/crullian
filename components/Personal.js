@@ -8,11 +8,11 @@ export default class Personal extends Component {
 
     let images = [{
       title: "emergency dj",
-      img: "assets/edj.jpg",
+      img: "/assets/edj.jpg",
       src: "http://emergencydj.herokuapp.com"
     }, {
       title: "vinylcache",
-      img: "assets/vc.jpg",
+      img: "/assets/vc.jpg",
       src: "http://vinylcache.herokuapp.com"
     }, {
       title: "codestream",
@@ -20,15 +20,15 @@ export default class Personal extends Component {
       src: ""
     }, {
       title: "art awesome",
-      img: "assets/aa.jpg",
+      img: "/assets/aa.jpg",
       src: ""
     }, {
       title: "chord reader",
-      img: "assets/cr.jpg",
+      img: "/assets/cr.jpg",
       src: ""
     }, {
       title: "tweeter",
-      img: "assets/tw.jpg",
+      img: "/assets/tw.jpg",
       src: "http://dry-temple-5824.herokuapp.com"
     }].map((project, index) => {
       return (
@@ -41,12 +41,10 @@ export default class Personal extends Component {
 
     return (
       <div>
-        
-          <h3 className="title">personal work.</h3>
-          <div className="flex-container">
-            {images}
-          </div>
-        
+        <h3 className="title">personal work.</h3>
+        <div className="flex-container">
+          {images}
+        </div>
       </div>
     )
   }

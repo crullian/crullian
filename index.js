@@ -6,7 +6,7 @@ import About from './components/About'
 import Other from './components/Other'
 import ArtList from './components/ArtList'
 import MusicList from './components/MusicList'
-import WebList from './components/WebList'
+import Portfolio from './components/Portfolio'
 import Client from './components/Client'
 import Personal from './components/Personal'
 import Cv from './components/CV'
@@ -16,11 +16,11 @@ render((
     <Route path="/" component={Home}>
       <Route path="/about" component={About}/>
       <Route path="/other" component={Other}/>
-        <Route path="/art" component={ArtList}/>
-        <Route path="/music" component={MusicList}/>
-      <Route path="/portfolio" component={WebList}/>
-        <Route path="/client" component={Client}/>
-        <Route path="/personal" component={Personal}/>
+        <Route path="/other/art" component={ArtList}/>
+        <Route path="/other/music" component={MusicList}/>
+      <Route path="/portfolio" component={Portfolio}/>
+        <Route path="/portfolio/client" component={Client}/>
+        <Route path="/portfolio/personal" component={Personal}/>
       <Route path="/cv" component={Cv}/>
     </Route>
   </Router>

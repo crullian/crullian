@@ -5,22 +5,22 @@ export default React.createClass({
   render() {
     let images = [{
       title: "actaeon",
-      img: "assets/Cuckold.jpg"
+      img: "/assets/Cuckold.jpg"
     }, {
       title: "sheepgirl",
-      img: "assets/Sheepgirllg.jpg"
+      img: "/assets/Sheepgirllg.jpg"
     }, {
       title: "bullwoman",
-      img: "assets/Bull Woman.jpg"
+      img: "/assets/Bull Woman.jpg"
     }, {
       title: "cornerpiece",
-      img: "assets/Cornerpiece.jpg"
+      img: "/assets/Cornerpiece.jpg"
     }, {
       title: "little man",
-      img: "assets/Little_Man.jpg"
+      img: "/assets/Little_Man.jpg"
     }, {
       title: "hic maneamus",
-      img: "assets/Hic Maneamus.jpg"
+      img: "/assets/Hic Maneamus.jpg"
     }].map((work, index) => {
       return ( 
         <Art img={work.img} 
