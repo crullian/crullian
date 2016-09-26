@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: "Didot";
+  font-family: "century Gothic";
   padding: 0 20px 0;
   background: #f4f4f7;
   color: #444;
@@ -11,21 +11,25 @@ body {
 
 .nav {
   display: block;
+  text-align: center;
   margin: 0;
+  padding: 0;
 }
 
 .nav li {
   display: inline-block;
-  margin: 10px 12px;
+  margin: 10px 9px;
 }
 
 #crullian {
   margin: 0 auto;
-  font-size: 2.8125rem;
+  font-size: 2.1875rem;
+  margin-bottom: 20px;
 }
 
 li {
   list-style-type: none;
+  cursor: pointer;
 }
 
 a {
@@ -36,6 +40,7 @@ a {
 
 .image {
   width: 100%;
+  box-shadow: 10px 10px 20px #c1bfbf;
 }
 
 .title {
@@ -59,30 +64,58 @@ audio {
   text-align: center;
 }
 
-.theMan {
+.man {
   width: 95%;
   margin: 0 auto;
 }
+ 
+.man .image {
+  margin-top: 20px;
+}
+
+.man .section.copy p {
+  margin-bottom: 0;
+}
 
 .theArt, .web {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .desktop-only {
   display: none;
 }
 
-@media (min-width: 420px) {
+canvas {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+
+  #crullian,
+  .title {
+    padding-left: 95px;
+  }
+
   .nav {
     display: inline-block;
     position: fixed;
-    top: 40px;
+    top: 70px;
     padding: 0;
   }
 
   .nav li {
     display: block;
     margin: 1em 0;
+  }
+
+  .man .section {
+    display: inline-block;
+    width: 50%
+  }
+
+  .man .section.copy {
+    float: left;
+    padding: 20px;
   }
 
   .flex-container {
@@ -92,7 +125,7 @@ audio {
     -webkit-column-gap: 10px;
     column-count: 2;
     column-gap: 10px;
-    padding-left: 15%;
+    padding-left: 18%;
   }
 
   .theArt,
@@ -106,14 +139,28 @@ audio {
     display: inline-block;
   }
 
-  .theMan{
+  .man{
     width: 65%;
   }
 }
 
 @media (min-width: 768px) {
-  .theMan{
-    width: 55%;
+  .nav {
+    text-align: left;
+  }
+
+  .flex-container {
+    -moz-column-count: 1;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 1;
+    -webkit-column-gap: 10px;
+    column-count: 1;
+    column-gap: 10px;
+    padding-left: 23%;
+  }
+
+  .man{
+    width: 75%;
   }
 }
 
@@ -123,24 +170,37 @@ audio {
     -moz-column-gap: 10px;
     -webkit-column-count: 3;
     -webkit-column-gap: 10px;
-    column-count: 3;
+    column-count: 2;
     column-gap: 10px;
-    padding-left: 90px;
+    padding-left: 18%;
   }
 
-  .theArt,
+  .theArt {
+    width: 75%;
+    display: inline-block;
+  }
+  
   .web {
-    width: 300px;
+    width: 90%;
     display: inline-block;
   }
 
-  .music {
-    width: 300px;
-    display: block;
+  .web .image {
+    width: 85%;
   }
 
-  .theMan {
-    width: 45%;
+  .music {
+    width: 80%;
+    display: inline-block;
+  }
+
+  .man {
+    width: 85%;
+    margin-right: 50px;
+  }
+
+  .man .image {
+    width: 95%;
   }
 
   .desktop-only {
