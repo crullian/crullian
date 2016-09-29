@@ -25,15 +25,15 @@ export default class Home extends React.Component {
                 <span className="desktop-only">or check the console if you’re into that sort of thing</span>
               </p>
               <div className="social">
-                <Link to="http://github.com/crullian">
+                <a href="http://github.com/crullian" target="_blank">
                   <img src="/assets/github.png"/>
-                </Link>
-                <Link to="http://linkedin.com/in/chrisgullian">
+                </a>
+                <a href="http://linkedin.com/in/chrisgullian" target="_blank">
                   <img src="/assets/linkedin-3-512.png"/>
-                </Link>
-                <Link to="http://twitter.com/crullian">
+                </a>
+                <a href="http://twitter.com/crullian" target="_blank">
                   <img src="/assets/twitter-wrap.png"/>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
