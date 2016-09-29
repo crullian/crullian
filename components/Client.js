@@ -6,29 +6,29 @@ export default class Client extends Component {
   render() {
 
     let clientWork = [{
-      title: "emergency dj",
-      img: "/assets/edj.jpg",
-      src: "http://emergencydj.herokuapp.com"
+      title: "Qatar 2022",
+      img: "/assets/q22_screen.jpg",
+      src: "http://sc.qa"
     }, {
-      title: "vinylcache",
-      img: "/assets/vc.jpg",
-      src: "http://vinylcache.herokuapp.com"
+      title: "MyCourt",
+      img: "/assets/mycourt.jpg",
+      src: "http://www.croscon.com/tools/mycourt/"
     }, {
-      title: "codestream",
-      img: "https://raw.githubusercontent.com/heatherpike/codestream/master/codestream.jpg",
-      src: ""
+      title: "Gem Safe",
+      img: "/assets/gemsafe.jpg",
+      src: "http://gemsafe.com"
     }, {
-      title: "art awesome",
-      img: "/assets/aa.jpg",
-      src: ""
+      title: "Museum of Feelings",
+      img: "/assets/glademof_screen.jpg",
+      src: "http://www.themuseumoffeelings.com"
     }, {
-      title: "chord reader",
-      img: "/assets/cr.jpg",
-      src: ""
+      title: "Ocean Health Index",
+      img: "/assets/ohi_screen.jpg",
+      src: "http://www.oceanhealthindex.org"
     }, {
-      title: "tweeter",
-      img: "/assets/tw.jpg",
-      src: "http://dry-temple-5824.herokuapp.com"
+      title: "Web Thriftstore",
+      img: "/assets/webthrift_screen.jpg",
+      src: "http://webthriftstore.com"
     }].map((project, index) => {
       return (
         <Web img={project.img}

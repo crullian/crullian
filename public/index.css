@@ -89,6 +89,23 @@ canvas {
   width: 100%;
 }
 
+.social {
+  padding-top: 20px;
+}
+
+.social a {
+  display: inline-block;
+  width: 40%;
+}
+
+.social a:last-child {
+  width: 50px;
+}
+
+.social img {
+  width: 50px;
+}
+
 @media (min-width: 768px) {
 
   #crullian,
@@ -110,11 +127,12 @@ canvas {
 
   .man .section {
     display: inline-block;
-    width: 50%
+    width: 50%;
+    // float: right;
   }
 
   .man .section.copy {
-    float: left;
+    float: right;
     padding: 20px;
   }
 
@@ -175,28 +193,20 @@ canvas {
     padding-left: 18%;
   }
 
-  .theArt {
-    width: 75%;
-    display: inline-block;
-  }
-  
+  .theArt,
+  .music,
   .web {
-    width: 90%;
-    display: inline-block;
-  }
-
-  .web .image {
-    width: 85%;
-  }
-
-  .music {
-    width: 80%;
+    width: 75%;
     display: inline-block;
   }
 
   .man {
     width: 85%;
     margin-right: 50px;
+  }
+
+  .man.cv {
+    padding: 20px;
   }
 
   .man .image {

@@ -6,7 +6,7 @@ export default class Web extends React.Component {
     return (
       <div className="web">
         <img src={ this.props.img } className="image"/>
-        <p><a href={ this.props.src }>{ this.props.title }</a></p>
+        <p><a href={ this.props.src } target="_blank">{ this.props.title }</a></p>
       </div>
     )
   }

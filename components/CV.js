@@ -7,7 +7,7 @@ export default class CV extends Component {
 
     return (
       <div>
-        <div className="man">
+        <div className="man cv">
           <Pdf file="assets/Chris_Gullian.pdf" 
                scale="2.0" />
         </div>
