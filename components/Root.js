@@ -4,7 +4,6 @@ import { IndexLink, Link } from 'react-router'
 class Root extends Component {
   render() {
     let content = this.props.children;
-    console.log('PATHNAME', this.props.location.pathname);
 
     return (
       <div>
