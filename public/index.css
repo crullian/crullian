@@ -107,10 +107,9 @@ canvas {
 }
 
 @media (min-width: 768px) {
-
   #crullian,
   .title {
-    padding-left: 95px;
+    padding-left: 72px;
   }
 
   .nav {
@@ -177,26 +176,31 @@ canvas {
     padding-left: 23%;
   }
 
-  .man{
+  .man {
     width: 75%;
   }
 }
 
 @media (min-width: 1074px) {
+  #crullian,
+  .title {
+    padding-left: 36px;
+  }
+
   .flex-container {
-    -moz-column-count: 3;
-    -moz-column-gap: 10px;
-    -webkit-column-count: 3;
-    -webkit-column-gap: 10px;
+    -moz-column-count: 2;
+    -moz-column-gap: 0px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0px;
     column-count: 2;
-    column-gap: 10px;
-    padding-left: 18%;
+    column-gap: 0px;
+    padding-left: 12%;
   }
 
   .theArt,
   .music,
   .web {
-    width: 75%;
+    width: 80%;
     display: inline-block;
   }
 
