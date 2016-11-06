@@ -106,6 +106,10 @@ canvas {
   width: 50px;
 }
 
+.active {
+  font-weight: bold;
+}
+
 @media (min-width: 768px) {
   #crullian,
   .title {
