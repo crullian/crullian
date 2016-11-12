@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-export default class Art extends React.Component {
+class Art extends Component {
   render() {
 
     return ( 
@@ -13,3 +13,5 @@ export default class Art extends React.Component {
     )
   }
 }
+
+export default Art

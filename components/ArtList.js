@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Art from './Art'
 
-export default React.createClass({
+class ArtList extends Component {
   render() {
     let images = [{
       title: "actaeon",
@@ -38,4 +38,6 @@ export default React.createClass({
       </div>
     )
   }
-})
+}
+
+export default ArtList
