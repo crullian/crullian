@@ -23,7 +23,6 @@ class Root extends Component {
 
   render() {
     let content = this.props.children;
-    console.log(this.state);
 
     return (
       <div>
