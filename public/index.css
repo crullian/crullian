@@ -4,27 +4,68 @@
 
 body {
   font-family: "century Gothic";
-  padding: 0 20px 0;
+  margin: 0;
   background: #f4f4f7;
   color: #444;
 }
 
-.nav {
-  display: block;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+.navBar {
+  background: rgba(255, 255, 255, 0.96);
+  position: fixed;
+  min-width: 100%;
+  box-shadow: 0 0 28px;
+  z-index: 100;
 }
 
-.nav li {
-  display: inline-block;
-  margin: 10px 9px;
+.wrapper {
+  margin: 0 auto;
+  max-width: 1138px;
+  padding: 0 2%;
+}
+
+.wrapper input {
+  display: none;
+}
+
+nav ul {
+  height: 0;
+  list-style-type: none;
+  opacity: 0;
+  text-align: center;
+  transition: all 1s ease;
+  width: 100%;
+  visibility: hidden;
+  padding: 0;
+  margin: 10px 0;
+}
+
+nav li {
+  border-bottom: 2px solid grey;
+  display: block;
+  font-size: 1.5em;
+  padding: 1em 0;
+}
+
+ #menu-toggle:checked ~ ul {
+  opacity: 1;
+  height: 100vh;
+  visibility: visible;
+}
+
+.label-toggle {
+  background: linear-gradient(to bottom, grey 0%, grey 20%, transparent 20%, transparent 40%, grey 40%, grey 60%, transparent 60%, transparent 80%, grey 80%, grey 100%); //Gradient Hamburger
+  cursor: pointer;
+  display: block;
+  float: right;
+  height: 35px;
+  margin-top: 1em;
+  width: 35px;
 }
 
 #crullian {
-  margin: 0 auto;
-  font-size: 2.1875rem;
-  margin-bottom: 20px;
+  display: inline-block;
+  font-size: 2rem;
+  margin: 10px 0 0 0;
 }
 
 li {
@@ -38,13 +79,17 @@ a {
   color: #444;
 }
 
+.content {
+  padding-top: 50px;
+}
+
 .image {
   width: 100%;
   box-shadow: 10px 10px 20px #c1bfbf;
 }
 
 .title {
-  margin: 20px;
+  margin: 50px 0 30px 0;
   font-weight: 300;
 }
 
@@ -56,7 +101,6 @@ audio {
   width: 100%;
 }
 
-#crullian,
 .title,
 .music p,
 .theArt p,
@@ -67,10 +111,6 @@ audio {
 .man {
   width: 95%;
   margin: 0 auto;
-}
- 
-.man .image {
-  margin-top: 20px;
 }
 
 .man .section.copy p {
@@ -111,42 +151,51 @@ canvas {
 }
 
 @media (min-width: 768px) {
-  #crullian,
-  .title {
-    padding-left: 72px;
+
+  #menu-toggle {
+    display: none;
+  }
+  
+  .label-toggle {
+    display: none;
   }
 
-  .nav {
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 40%;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  nav a {
+    text-decoration: none;
+    transition: all .5s ease;
+  }
+
+  nav li  {
     display: inline-block;
-    position: fixed;
-    top: 70px;
+    border: none;
+    font-size: 1em;
     padding: 0;
   }
 
-  .nav li {
-    display: block;
-    margin: 1em 0;
-  }
-
-  .man .section {
-    display: inline-block;
-    width: 50%;
-    // float: right;
-  }
-
-  .man .section.copy {
-    float: right;
-    padding: 20px;
+  nav .wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
   }
 
   .flex-container {
-    -moz-column-count: 2;
+    -moz-column-count: 1;
     -moz-column-gap: 10px;
-    -webkit-column-count: 2;
+    -webkit-column-count: 1;
     -webkit-column-gap: 10px;
-    column-count: 2;
+    column-count: 1;
     column-gap: 10px;
-    padding-left: 18%;
+    padding-left: 23%;
   }
 
   .theArt,
@@ -160,24 +209,14 @@ canvas {
     display: inline-block;
   }
 
-  .man{
-    width: 65%;
-  }
-}
-
-@media (min-width: 768px) {
-  .nav {
-    text-align: left;
+  .man .section {
+    display: inline-block;
+    width: 50%;
   }
 
-  .flex-container {
-    -moz-column-count: 1;
-    -moz-column-gap: 10px;
-    -webkit-column-count: 1;
-    -webkit-column-gap: 10px;
-    column-count: 1;
-    column-gap: 10px;
-    padding-left: 23%;
+  .man .section.copy {
+    float: right;
+    padding: 20px;
   }
 
   .man {
@@ -186,10 +225,6 @@ canvas {
 }
 
 @media (min-width: 1074px) {
-  #crullian,
-  .title {
-    padding-left: 36px;
-  }
 
   .flex-container {
     -moz-column-count: 2;
@@ -198,7 +233,7 @@ canvas {
     -webkit-column-gap: 0px;
     column-count: 2;
     column-gap: 0px;
-    padding-left: 12%;
+    padding-left: 10%;
   }
 
   .theArt,
@@ -210,7 +245,6 @@ canvas {
 
   .man {
     width: 85%;
-    margin-right: 50px;
   }
 
   .man.cv {
@@ -225,4 +259,3 @@ canvas {
     display: block;
   }
 }
-
