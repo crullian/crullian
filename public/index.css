@@ -83,8 +83,13 @@ a {
   padding-top: 50px;
 }
 
+.flex-container {
+  padding: 0 8px;
+}
+
 .image {
   width: 100%;
+  border-radius: 5px;
   box-shadow: 10px 10px 20px #c1bfbf;
 }
 
@@ -189,23 +194,19 @@ canvas {
   }
 
   .flex-container {
-    -moz-column-count: 1;
-    -moz-column-gap: 10px;
-    -webkit-column-count: 1;
-    -webkit-column-gap: 10px;
-    column-count: 1;
-    column-gap: 10px;
-    padding-left: 23%;
+    display: flex;
+    flex-flow: column;
+    width: 500px;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .theArt,
   .web {
-    width: 80%;
     display: inline-block;
   }
 
   .music {
-    width: 80%;
     display: inline-block;
   }
 
@@ -227,19 +228,15 @@ canvas {
 @media (min-width: 1074px) {
 
   .flex-container {
-    -moz-column-count: 2;
-    -moz-column-gap: 0px;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 0px;
-    column-count: 2;
-    column-gap: 0px;
-    padding-left: 10%;
+    width: 1000px;
+    flex-flow: wrap;
+    justify-content: space-between;
   }
 
   .theArt,
   .music,
   .web {
-    width: 80%;
+    width: 450px;
     display: inline-block;
   }
 
