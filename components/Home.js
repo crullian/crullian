@@ -11,16 +11,16 @@ class Home extends Component {
       <div>
         <div className="man">
           <div className="section">
-            <img src="/assets/Z.jpg" className="image"/>
+            <img src="/assets/wings.jpg" className="image"/>
           </div>
           <div className="section copy">
             <h3>tl;dr</h3>
-            <p>Hi! I'm a Software Developer with 
-               two years of agency and startup experience building client 
+            <p>Hi, I'm a web developer with 
+               four years of industry experience building client 
                and server side web applications using modern
                technologies. Connect with me with one of the links
                below 
-              <span className="desktop-only">or check the console if you’re into that sort of thing</span>
+              <span className="desktop-only">or check the console if you're into that sort of thing</span>
             </p>
             <div className="social">
               <a href="http://github.com/crullian" target="_blank">

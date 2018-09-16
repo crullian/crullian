@@ -80,7 +80,7 @@ a {
 }
 
 .content {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .flex-container {
@@ -136,11 +136,12 @@ canvas {
 
 .social {
   padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .social a {
   display: inline-block;
-  width: 40%;
 }
 
 .social a:last-child {
