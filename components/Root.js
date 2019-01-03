@@ -4,20 +4,30 @@ import { IndexLink, Link } from 'react-router'
 class Root extends Component {
 
   state = {
-    isChecked: false
+    isChecked: false,
+    isScrolled: false
   }
 
   componentDidMount() {
-    window.addEventListener('resize', this.handleResize.bind(this));
+    window.addEventListener('resize', this.handleResize);
+    window.addEventListener('scroll', this.handleScroll)
   }
 
-  handleResize() {
+  handleResize = () => {
     this.setState({isChecked: false});
   }
 
-  handleClick() {
+  handleClick = () => {
     if (window.innerWidth < 768) {
       this.setState({isChecked: !this.state.isChecked});
+    }
+  }
+
+  handleScroll = (event) => {
+    if (window.scrollY > 0) {
+      this.setState({isScrolled: true});
+    } else {
+      this.setState({isScrolled: false});
     }
   }
 
@@ -26,16 +36,16 @@ class Root extends Component {
 
     return (
       <div>
-        <nav className="navBar">
+        <nav className={`navBar${this.state.isScrolled ? ' shadow': ''}`}>
           <nav className="wrapper">
             <h1 id="crullian"><Link to="/">Chris Gullian</Link></h1>
-            <input checked={this.state.isChecked} type="checkbox" id="menu-toggle" onClick={this.handleClick.bind(this)}/>
+            <input checked={this.state.isChecked} type="checkbox" id="menu-toggle" onClick={this.handleClick}/>
             <label htmlFor="menu-toggle" className="label-toggle"></label>
             <ul className="nav">
-              <li onClick={this.handleClick.bind(this)}><Link to="/portfolio" activeClassName="active">portfolio</Link></li>
-              <li onClick={this.handleClick.bind(this)}><Link to="/cv" activeClassName="active">resume</Link></li>
-              <li onClick={this.handleClick.bind(this)}><Link to="/other" activeClassName="active">other stuff</Link></li>
-              <li onClick={this.handleClick.bind(this)}><IndexLink to="/" activeClassName="active">home</IndexLink></li>
+              <li onClick={this.handleClick}><Link to="/portfolio" activeClassName="active">portfolio</Link></li>
+              <li onClick={this.handleClick}><Link to="/cv" activeClassName="active">resume</Link></li>
+              <li onClick={this.handleClick}><Link to="/other" activeClassName="active">other stuff</Link></li>
+              <li onClick={this.handleClick}><IndexLink to="/" activeClassName="active">home</IndexLink></li>
             </ul>
           </nav>
         </nav>

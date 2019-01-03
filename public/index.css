@@ -10,11 +10,16 @@ body {
 }
 
 .navBar {
-  background: rgba(255, 255, 255, 0.96);
+  background: rgb(244, 244, 247); /*rgba(255, 255, 255, 0.96);*/
   position: fixed;
   min-width: 100%;
-  box-shadow: 0 0 28px;
   z-index: 100;
+  transition: box-shadow .10s ease-in-out;
+}
+
+.navBar.shadow {
+  box-shadow: #c1bfbf 0 0 28px;
+  
 }
 
 .wrapper {
@@ -80,7 +85,7 @@ a {
 }
 
 .content {
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 .flex-container {
