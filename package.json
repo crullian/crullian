@@ -2,15 +2,15 @@
   "name": "crullian",
   "version": "1.0.0",
   "engines": {
-    "node": "5.9.0"
+    "node": ">=8"
   },
   "description": "My portfolio website",
   "main": "index.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:dev": "webpack-dev-server --inline --content-base public --history-api-fallback",
-    "start:prod": "webpack && node server.js",
-    "postinstall": "webpack --config ./webpack.config.js --progress --colors"
+    "start:prod": "node server.js",
+    "deploy": "node_modules/.bin/webpack  --config ./webpack.config.js && gcloud app deploy --project crullian --version=1"
   },
   "author": "Chris Gullian",
   "license": "ISC",

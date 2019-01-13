@@ -25506,26 +25506,28 @@
 	    }
 
 	    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Root.__proto__ || Object.getPrototypeOf(Root)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-	      isChecked: false
+	      isChecked: false,
+	      isScrolled: false
+	    }, _this.handleResize = function () {
+	      _this.setState({ isChecked: false });
+	    }, _this.handleClick = function () {
+	      if (window.innerWidth < 768) {
+	        _this.setState({ isChecked: !_this.state.isChecked });
+	      }
+	    }, _this.handleScroll = function (event) {
+	      if (window.scrollY > 0) {
+	        _this.setState({ isScrolled: true });
+	      } else {
+	        _this.setState({ isScrolled: false });
+	      }
 	    }, _temp), _possibleConstructorReturn(_this, _ret);
 	  }
 
 	  _createClass(Root, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      window.addEventListener('resize', this.handleResize.bind(this));
-	    }
-	  }, {
-	    key: 'handleResize',
-	    value: function handleResize() {
-	      this.setState({ isChecked: false });
-	    }
-	  }, {
-	    key: 'handleClick',
-	    value: function handleClick() {
-	      if (window.innerWidth < 768) {
-	        this.setState({ isChecked: !this.state.isChecked });
-	      }
+	      window.addEventListener('resize', this.handleResize);
+	      window.addEventListener('scroll', this.handleScroll);
 	    }
 	  }, {
 	    key: 'render',
@@ -25537,7 +25539,7 @@
 	        null,
 	        _react2.default.createElement(
 	          'nav',
-	          { className: 'navBar' },
+	          { className: 'navBar' + (this.state.isScrolled ? ' shadow' : '') },
 	          _react2.default.createElement(
 	            'nav',
 	            { className: 'wrapper' },
@@ -25550,14 +25552,14 @@
 	                'Chris Gullian'
 	              )
 	            ),
-	            _react2.default.createElement('input', { checked: this.state.isChecked, type: 'checkbox', id: 'menu-toggle', onClick: this.handleClick.bind(this) }),
+	            _react2.default.createElement('input', { checked: this.state.isChecked, type: 'checkbox', id: 'menu-toggle', onClick: this.handleClick }),
 	            _react2.default.createElement('label', { htmlFor: 'menu-toggle', className: 'label-toggle' }),
 	            _react2.default.createElement(
 	              'ul',
 	              { className: 'nav' },
 	              _react2.default.createElement(
 	                'li',
-	                { onClick: this.handleClick.bind(this) },
+	                { onClick: this.handleClick },
 	                _react2.default.createElement(
 	                  _reactRouter.Link,
 	                  { to: '/portfolio', activeClassName: 'active' },
@@ -25566,7 +25568,7 @@
 	              ),
 	              _react2.default.createElement(
 	                'li',
-	                { onClick: this.handleClick.bind(this) },
+	                { onClick: this.handleClick },
 	                _react2.default.createElement(
 	                  _reactRouter.Link,
 	                  { to: '/cv', activeClassName: 'active' },
@@ -25575,7 +25577,7 @@
 	              ),
 	              _react2.default.createElement(
 	                'li',
-	                { onClick: this.handleClick.bind(this) },
+	                { onClick: this.handleClick },
 	                _react2.default.createElement(
 	                  _reactRouter.Link,
 	                  { to: '/other', activeClassName: 'active' },
@@ -25584,7 +25586,7 @@
 	              ),
 	              _react2.default.createElement(
 	                'li',
-	                { onClick: this.handleClick.bind(this) },
+	                { onClick: this.handleClick },
 	                _react2.default.createElement(
 	                  _reactRouter.IndexLink,
 	                  { to: '/', activeClassName: 'active' },
