@@ -16,9 +16,9 @@ app.get('/', (req, res) => {
     .end();
 });
 
-// app.get('*', function(req, res) {
-// 	res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
-// })
+app.get('*', function(req, res) {
+	res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
+})
 
 // app.get('/cv_download', function (req, res) {
 //   const filePath = "/public/assets/Chris_Gullian.pdf"
