@@ -3,8 +3,8 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router'
 import { render } from 'react-dom'
 import Root from './components/Root'
 import Home from './components/Home'
-import Other from './components/Other'
 import ArtList from './components/ArtList'
+import ArtItem from './components/ArtItem'
 import MusicList from './components/MusicList'
 import Portfolio from './components/Portfolio'
 import Client from './components/Client'
@@ -15,11 +15,11 @@ render((
   <Router history={browserHistory}>
     <Route path="/" component={Root}>
       <IndexRoute component={Home}/>
-      <Route path="other">
-        <IndexRoute component={Other}/>
-        <Route path="art" component={ArtList}/>
-        <Route path="music" component={MusicList}/>
+      <Route path="art">
+        <IndexRoute component={ArtList}/>
+        <Route path="/art/:artist" component={ArtItem}/>
       </Route>
+      <Route path="music" component={MusicList}/>
       <Route path="portfolio">
         <IndexRoute component={Portfolio}/>
         <Route path="client" component={Client}/>

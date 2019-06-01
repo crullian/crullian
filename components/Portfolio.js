@@ -7,7 +7,7 @@ export default class Portfolio extends Component {
 
     return (
        <div>
-        <h3 className="title">portfolio.</h3>
+        <h3 className="title">web.</h3>
 
         <div className="flex-container">
           
