@@ -67,7 +67,7 @@ class ArtList extends Component {
       },
       {
         title: "father and child (detail)",
-        img: "/assets/Fthrnchld2.jpg"
+        img: "/assets/FthrnChld2.jpg"
       },
     ].map((work, index) => {
       return ( 
