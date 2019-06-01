@@ -71,16 +71,18 @@ class ArtList extends Component {
       },
     ].map((work, index) => {
       return ( 
-        <Link to={{
-          pathname: `/art/${work.title}`,
-          state: {
-            artwork: work
-          }
-        }}>
+        <Link
+          to={{
+            pathname: `/art/${work.title}`,
+            state: {
+              artwork: work
+            }
+          }}
+          key={index}
+        >
           <Art
             img={work.img} 
             title={work.title} 
-            key={index}
           />
         </Link>
       )
