@@ -6,6 +6,10 @@ class ArtList extends Component {
   render() {
     let images = [
       {
+        title: "unnamed",
+        img: "/assets/unnamed.jpg"
+      },
+      {
         title: "actaeon",
         img: "/assets/Cuckold.jpg"
       },
