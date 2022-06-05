@@ -6,6 +6,18 @@ class ArtList extends Component {
   render() {
     let images = [
       {
+        title: "Tanya study",
+        img: "/assets/tanya_study.jpg"
+      },
+      {
+        title: "X-ray",
+        img: "/assets/X-ray.jpg"
+      },
+      {
+        title: "Marriage Portrait",
+        img: "/assets/marriage portrait.jpg"
+      },
+      {
         title: "unnamed",
         img: "/assets/unnamed.jpg"
       },
@@ -77,7 +89,7 @@ class ArtList extends Component {
       return ( 
         <Link
           to={{
-            pathname: `/art/${work.title}`,
+            pathname: `/work/${work.title}`,
             state: {
               artwork: work
             }
@@ -94,7 +106,6 @@ class ArtList extends Component {
 
     return (
       <div>
-        <h3 className="title">art.</h3>
         <div className="flex-container">
           {images}
         </div>

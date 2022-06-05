@@ -17,16 +17,17 @@ export default React.createClass({
       src: "/assets/Temporary Love34MP3.mp3"
     }].map((song, index) => {
       return (
-        <Music img={song.img}
-               src={song.src}
-               title={song.title}
-               key={index} />
+        <Music
+          img={song.img}
+          src={song.src}
+          title={song.title}
+          key={index}
+        />
       )
     });
 
     return (
       <div>
-        <h3 className="title">housekeeping (music).</h3>
         <div className="flex-container">
           {songs}
         </div>

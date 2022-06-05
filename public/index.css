@@ -118,8 +118,10 @@ audio {
 }
 
 .man {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .man .section.copy p {
@@ -217,7 +219,7 @@ canvas {
 
   .man .section {
     display: inline-block;
-    width: 50%;
+    /*width: 50%;*/
   }
 
   .man .section.copy {
@@ -226,7 +228,7 @@ canvas {
   }
 
   .man {
-    width: 75%;
+    width: 50%;
   }
 }
 
@@ -246,7 +248,7 @@ canvas {
   }
 
   .man {
-    width: 85%;
+    width: 50%;
   }
 
   .man.cv {
@@ -254,7 +256,7 @@ canvas {
   }
 
   .man .image {
-    width: 95%;
+    /*width: 95%;*/
   }
 
   .desktop-only {

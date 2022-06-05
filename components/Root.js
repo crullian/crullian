@@ -32,9 +32,6 @@ class Root extends Component {
   }
 
   render() {
-    let content = this.props.children;
-    // <li><Link to="/cv" activeClassName="active">resume</Link></li>
-    // <li><Link to="/portfolio" activeClassName="active">web</Link></li>
 
     return (
       <div>
@@ -44,16 +41,15 @@ class Root extends Component {
             <input checked={this.state.isChecked} type="checkbox" id="menu-toggle" onClick={this.handleClick}/>
             <label htmlFor="menu-toggle" className="label-toggle"></label>
             <ul className="nav" onClick={this.handleClick}>
-              <li><Link to="/art" activeClassName="active">art</Link></li>
+              <li><Link to="/work" activeClassName="active">work</Link></li>
               <li><Link to="/music" activeClassName="active">music</Link></li>
               <li><IndexLink to="/" activeClassName="active">home</IndexLink></li>
             </ul>
           </nav>
         </nav>
         <div className="content">
-          {content}
+          {this.props.children}
         </div>
-        <div id="footer"></div>
       </div>
     )
   }
