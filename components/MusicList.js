@@ -1,38 +1,23 @@
 import React from 'react'
 import Music from './Music'
+import { music } from '../data/data.js'
 
-export default React.createClass({
-  render() {
-    let songs = [{
-      title: "flaunting the sorcery (q.r.)",
-      img: "/assets/QR blocks.jpg",
-      src: "/assets/Flaunting The Sorcery (Q.R).mp3"
-    }, {
-      title: "welcome to the night",
-      img: "/assets/WTTN cover final mg.jpg",
-      src: "/assets/Welcome To The Night 23.mp3"
-    }, {
-      title: "temporary love",
-      img: "/assets/getting_away.jpg",
-      src: "/assets/Temporary Love34MP3.mp3"
-    }].map((song, index) => {
-      return (
-        <Music
-          img={song.img}
-          src={song.src}
-          title={song.title}
-          key={index}
-        />
-      )
-    });
+const MusicList = () => (
+  <div>
+    <div className="grid-container">
+      {music.map((song, index) => {
+        return (
+          <Music
+            img={song.img}
+            src={song.src}
+            title={song.title}
+            key={index}
+          />
+        )
+      })}
+    </div>
+    <p><a href="http://housekeeping.bandcamp.com" target="_blank">more</a></p>
+  </div>
+)
 
-    return (
-      <div>
-        <div className="flex-container">
-          {songs}
-        </div>
-        <p><a href="http://housekeeping.bandcamp.com" target="_blank">more</a></p>
-      </div>
-    )
-  }
-})
+  export default MusicList;

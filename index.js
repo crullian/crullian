@@ -4,7 +4,7 @@ import { render } from 'react-dom'
 import Root from './components/Root'
 import Home from './components/Home'
 import ArtList from './components/ArtList'
-import ArtItem from './components/ArtItem'
+import Image from './components/Image'
 import MusicList from './components/MusicList'
 
 render((
@@ -13,7 +13,7 @@ render((
       <IndexRoute component={Home}/>
       <Route path="work">
         <IndexRoute component={ArtList}/>
-        <Route path="/work/:work" component={ArtItem}/>
+        <Route path="/work/:work" component={props => <Image src={props.location.state.artwork.img} />}/>
       </Route>
       <Route path="music" component={MusicList}/>
     </Route>

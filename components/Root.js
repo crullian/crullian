@@ -32,7 +32,6 @@ class Root extends Component {
   }
 
   render() {
-
     return (
       <div>
         <nav className={`navBar${this.state.isScrolled ? ' shadow': ''}`}>

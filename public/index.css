@@ -23,8 +23,7 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1138px;
-  padding: 0 2%;
+  padding: 0 32px;
 }
 
 .wrapper input {
@@ -36,7 +35,7 @@ nav ul {
   list-style-type: none;
   opacity: 0;
   text-align: center;
-  transition: all 1s ease;
+  transition: all .3s ease;
   width: 100%;
   visibility: hidden;
   padding: 0;
@@ -66,13 +65,6 @@ nav li {
   width: 35px;
 }
 
-#crullian {
-  font-weight: 200;
-  display: inline-block;
-  font-size: 2rem;
-  margin: 10px 0 0 0;
-}
-
 li {
   list-style-type: none;
   cursor: pointer;
@@ -84,22 +76,30 @@ a {
   color: #444;
 }
 
-.content {
-  padding: 70px 20px 0;
+#crullian {
+  font-weight: 200;
+  display: inline-block;
+  font-size: 32px;
+  margin: 10px 0 0 0;
 }
 
-.flex-container {
-  padding: 0 8px;
+.content {
+  padding: 85px 2% 0;
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 128px;
 }
 
 .image {
   width: 100%;
+  max-width: 650px;
   border-radius: 5px;
   box-shadow: 10px 10px 20px #c1bfbf;
-}
-
-.title {
-  font-weight: 300;
 }
 
 .music {
@@ -112,50 +112,12 @@ audio {
 
 .title,
 .music p,
-.theArt p,
-.web p {
+.theArt p {
   text-align: center;
 }
 
-.man {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-
-.man .section.copy p {
-  margin-bottom: 0;
-}
-
-.theArt, .web {
+.theArt {
   padding-bottom: 50px;
-}
-
-.desktop-only {
-  display: none;
-}
-
-canvas {
-  width: 100%;
-}
-
-.social {
-  padding-top: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.social a {
-  display: inline-block;
-}
-
-.social a:last-child {
-  width: 50px;
-}
-
-.social img {
-  width: 50px;
 }
 
 .active {
@@ -200,66 +162,13 @@ canvas {
     margin-bottom: 20px;
   }
 
-  .flex-container {
-    display: flex;
-    flex-flow: column;
-    width: 500px;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  .theArt,
-  .web {
-    display: inline-block;
-  }
-
-  .music {
-    display: inline-block;
-  }
-
-  .man .section {
-    display: inline-block;
-    /*width: 50%;*/
-  }
-
-  .man .section.copy {
-    float: right;
-    padding: 20px;
-  }
-
-  .man {
-    width: 50%;
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: 1074px) {
-
-  .flex-container {
-    width: 1000px;
-    flex-flow: wrap;
-    justify-content: space-between;
-  }
-
-  .theArt,
-  .music,
-  .web {
-    width: 450px;
-    display: inline-block;
-  }
-
-  .man {
-    width: 50%;
-  }
-
-  .man.cv {
-    padding: 20px;
-  }
-
-  .man .image {
-    /*width: 95%;*/
-  }
-
-  .desktop-only {
-    display: block;
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
