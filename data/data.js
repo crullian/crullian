@@ -3,7 +3,7 @@ export const art = [
     "title": "this and that",
     "img": "/assets/this_that.png"
   },
-	{
+  {
     "title": "tanya",
     "img": "/assets/tanya_study.jpg"
   },
