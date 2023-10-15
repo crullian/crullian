@@ -1,7 +1,7 @@
 export const art = [
   {
     "title": "the couple",
-    "img": "/assets/the_couple.jpeg"
+    "img": "/assets/the_couple.png"
   },
   {
     "title": "tanya",
