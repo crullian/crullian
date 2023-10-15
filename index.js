@@ -6,6 +6,8 @@ import Home from './components/Home'
 import ArtList from './components/ArtList'
 import Image from './components/Image'
 import MusicList from './components/MusicList'
+import Bio from './components/Bio'
+import Detail from './components/Detail'
 
 render((
   <Router history={browserHistory}>
@@ -13,9 +15,10 @@ render((
       <IndexRoute component={Home}/>
       <Route path="work">
         <IndexRoute component={ArtList}/>
-        <Route path="/work/:work" component={props => <Image src={props.location.state.artwork.img} />}/>
+        <Route path="/work/:work" component={props => <Detail {...props} />}/>
       </Route>
       <Route path="music" component={MusicList}/>
+      <Route path="bio" component={Bio}/>
     </Route>
   </Router>
 ), document.getElementById('app'))

@@ -90,9 +90,11 @@ a {
 }
 
 .grid-container {
-  display: grid;
+  /*display: grid;
   grid-template-columns: 1fr;
-  grid-column-gap: 128px;
+  grid-column-gap: 70px;*/
+  column-count: 1;
+  column-gap: 120px;
 }
 
 .image {
@@ -108,6 +110,11 @@ a {
 
 audio {
   width: 100%;
+}
+
+.detail {
+  display: grid;
+  gap: 32px;
 }
 
 .title,
@@ -163,12 +170,18 @@ audio {
   }
 
   .grid-container {
-    grid-template-columns: 1fr 1fr;
+    /*grid-template-columns: repeat(2, 1fr);*/
+    column-count: 2;
   }
 }
 
 @media (min-width: 1074px) {
   .grid-container {
-    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-columns: repeat(4, 1fr);*/
+    column-count: 4;
+  }
+
+    .detail {
+    display: flex;
   }
 }
