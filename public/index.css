@@ -131,6 +131,10 @@ audio {
   font-weight: bold;
 }
 
+.exhibitions div {
+  margin-bottom: 8px;
+}
+
 @media (min-width: 768px) {
 
   #menu-toggle {
@@ -145,7 +149,7 @@ audio {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    width: 40%;
+    width: 200px;
     opacity: 1;
     visibility: visible;
   }

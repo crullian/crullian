@@ -43,7 +43,6 @@ class Root extends Component {
               <li><Link to="/work" activeClassName="active">work</Link></li>
               {/*<li><Link to="/music" activeClassName="active">music</Link></li>*/}
               <li><Link to="/bio" activeClassName="active">bio</Link></li>
-              <li><IndexLink to="/" activeClassName="active">home</IndexLink></li>
             </ul>
           </nav>
         </nav>

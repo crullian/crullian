@@ -1,14 +1,28 @@
 import React from 'react'
 import Image from './Image';
+import { art } from '../data/data.js';
 
-const Detail = (props) => (
-	<div className="detail">
-    <Image src={props.location.state.artwork.img} />
-    <div>
-      <p style={{fontSize: "20px"}}>"{props.location.state.artwork.title}"</p>
-      <p>{props.location.state.artwork.medium}</p>
-    </div>
-  </div>
-)
+class Detail extends React.Component {
+	componentDidMount() {
+    window.scrollTo(0,0)
+  }
+
+  findDetail = () => art.find(obj => {
+	  return obj.title === decodeURIComponent(this.props.location.pathname.split("/").pop());
+	})
+
+	render() {
+		const detail = this.findDetail();
+		return (
+			<div className="detail">
+		    <Image src={detail.img} />
+		    <div>
+		      <p style={{fontSize: "20px"}}>"{detail.title}"</p>
+		      <p>{detail.medium}</p>
+		    </div>
+		  </div>
+		)
+	}
+}
 
 export default Detail;
