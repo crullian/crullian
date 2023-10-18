@@ -35,9 +35,9 @@ const Bio = () => (
       <div>2008 - "Summer Exhibition", New York Academy of Art, New York, NY - Jurors: David Salle, Nicola Hicks, Will Cotton, Matthew Flowers</div>
       <div>2007 - "Homecoming", an Exhibition of Former Third Year Fellows, New York Academy of Art, New York, NY</div>
       <div>2007 - "Summer Exhibition", New York Academy of Art, New York, NY Jurors: Eric Fishl, Jenny Saville, Vincent Desiderio</div>
-      <div>2006 - "Night of a Thousand Drawings", Artist’s Space, New York, NY</div>
+      <div>2006 - "Night of a Thousand Drawings", Artist's Space, New York, NY</div>
       <div>2006 - "Salon 2006", New York Academy of Art, New York, NY</div>
-      <div>2005 - "Night of a Thousand Drawings", Artist’s Space, New York, NY</div>
+      <div>2005 - "Night of a Thousand Drawings", Artist's Space, New York, NY</div>
       <div>2004 - "New York Academy Alumni", Stricoff Fine Art, New York, NY</div>
       <div>2004 - "Child, Father of the Man", New York Academy of Art, New York, NY</div>
       <div>2003 - "M.F.A. Graduate Exhibition", New York Academy of Art, New York, NY</div>
