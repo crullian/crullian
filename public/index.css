@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  font-size: large;
   margin: 0;
   background: #f4f4f7;
   color: #444;
@@ -135,6 +136,12 @@ audio {
   margin-bottom: 8px;
 }
 
+.contact {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
 @media (min-width: 768px) {
 
   #menu-toggle {
@@ -176,6 +183,10 @@ audio {
   .grid-container {
     /*grid-template-columns: repeat(2, 1fr);*/
     column-count: 2;
+  }
+
+  .contact {
+    flex-direction: row;
   }
 }
 
